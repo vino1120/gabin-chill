@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8ed">
+  <meta name="description" content="Gabin Chill — es gabin creamy dengan rasa cokelat, matcha, dan Oreo.">
+  <title>Gabin Chill | Crispy di Luar, Creamy di Dalam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="beranda">
+    <a href="#beranda" class="logo">Gabin<span>Chill</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#beranda">Beranda</a>
+      <a href="#menu">Menu</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <a href="#menu" class="nav-button"> Pesan Sekarang</a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Buka navigasi" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-label">ES GABIN KEKINIAN</span>
+
+        <h1>Gabin Chill<span class="hero-spark">✦</span></h1>
+
+        <h2>Crispy di luar, creamy di dalam!</h2>
+
+        <p class="hero-description">
+          Perpaduan biskuit gabin yang renyah dengan
+          es krim lembut dan tiga varian rasa yang bikin
+          waktu santaimu makin chill.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="button button-primary">
+             Lihat Menu Produk
+          </a>
+
+          <a href="#tentang" class="button button-secondary">
+            ♡ Tentang Kami
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span> 3 varian rasa favorit</span>
+          <span class="note-divider">|</span>
+          <span>Mulai Rp10.000</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <span class="hero-decoration decoration-one">✳</span>
+        <span class="hero-decoration decoration-two">✦</span>
+        <span class="hero-decoration decoration-three">♡</span>
+
+        <div class="hero-sticker">
+          <span>Made with</span>
+          <strong>♡ Love!</strong>
+        </div>
+      </div>
+
+      <div class="hero-bottom-wave"></div>
+    </section>
+
+    <!-- MENU PRODUK -->
+    <section class="menu-produk" id="menu">
+      <span class="menu-decoration decoration-menu-one">✦</span>
+      <span class="menu-decoration decoration-menu-two">✳</span>
+      <span class="menu-decoration decoration-menu-three">♡</span>
+
+      <div class="menu-header">
+        <span class="menu-label">✦ MENU PRODUK ✦</span>
+        <h2>Temukan Rasa <span>Favoritmu!</span></h2>
+        <p>
+          Tiga pilihan rasa, satu alasan buat chill.
+          Kamu tim cokelat, matcha, atau Oreo?
+        </p>
+      </div>
+
+      <div class="produk-container">
+
+        <!-- COKELAT -->
+        <article class="produk-card cokelat">
+          <div class="produk-gambar">
+            <span class="produk-badge">Cokelat 🍫</span>
+            <div class="produk-blob"></div>
+
+            <img src="images/gabi.png" alt="Gabin es krim rasa cokelat">
+
+            <span class="produk-spark spark-one">✦</span>
+            <span class="produk-spark spark-two">✳</span>
+            <span class="rasa-emoji">🍫</span>
+          </div>
+
+          <div class="produk-info">
+            <span class="produk-kategori">RICH & CHOCOLATY</span>
+            <h3>Choco Chill</h3>
+            <p>
+              Es gabin dengan rasa cokelat yang kaya,
+              manis, dan lembut di setiap gigitan.
+            </p>
+
+            <div class="produk-bawah">
+              <div class="harga-wrapper">
+                <span class="harga-label">Harga satuan</span>
+                <span class="produk-harga">Rp10.000</span>
+              </div>
+
+              <button type="button" class="produk-pesan"
+                onclick="bukaPesanan('Choco Chill')"
+                aria-label="Pesan Choco Chill">↗</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- MATCHA -->
+        <article class="produk-card matcha">
+          <div class="produk-gambar">
+            <span class="produk-badge">Matcha 🍵</span>
+            <div class="produk-blob"></div>
+
+            <img src="images/gabi.png" alt="Gabin es krim rasa matcha">
+
+            <span class="produk-spark spark-one">✦</span>
+            <span class="produk-spark spark-two">✳</span>
+            <span class="rasa-emoji">🍵</span>
+          </div>
+
+          <div class="produk-info">
+            <span class="produk-kategori">SMOOTH & UNIQUE</span>
+            <h3>Matcha Chill</h3>
+            <p>
+              Perpaduan gabin renyah dengan es krim
+              matcha yang lembut dan khas.
+            </p>
+
+            <div class="produk-bawah">
+              <div class="harga-wrapper">
+                <span class="harga-label">Harga satuan</span>
+                <span class="produk-harga">Rp10.000</span>
+              </div>
+
+              <button type="button" class="produk-pesan"
+                onclick="bukaPesanan('Matcha Chill')"
+                aria-label="Pesan Matcha Chill">↗</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- OREO -->
+        <article class="produk-card oreo">
+          <div class="produk-gambar">
+            <span class="produk-badge">Oreo 🍪</span>
+            <div class="produk-blob"></div>
+
+            <img src="images/gabi.png" alt="Gabin es krim rasa Oreo">
+
+            <span class="produk-spark spark-one">✦</span>
+            <span class="produk-spark spark-two">✳</span>
+            <span class="rasa-emoji">🍪</span>
+          </div>
+
+          <div class="produk-info">
+            <span class="produk-kategori">CREAMY & CRUNCHY</span>
+            <h3>Oreo Chill</h3>
+            <p>
+              Es krim creamy dengan sensasi rasa oreo
+              cokelat yang jadi favorit banyak orang.
+            </p>
+
+            <div class="produk-bawah">
+              <div class="harga-wrapper">
+                <span class="harga-label">Harga satuan</span>
+                <span class="produk-harga">Rp10.000</span>
+              </div>
+
+              <button type="button" class="produk-pesan"
+                onclick="bukaPesanan('Oreo Chill')"
+                aria-label="Pesan Oreo Chill">↗</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="menu-catatan">
+        <span>✨</span>
+        Pilih rasa favoritmu dan nikmati waktu chill!
+        <span>✨</span>
+      </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="tentang" id="tentang">
+      <div class="tentang-visual">
+        <div class="tentang-circle">
+          <span class="tentang-emoji">🍨</span>
+          <span class="tentang-heart">♡</span>
+        </div>
+      </div>
+
+      <div class="tentang-content">
+        <span class="section-kicker">CERITA GABIN CHILL</span>
+
+        <h2>
+          Camilan Kecil,
+          <span>Rasa Besar!</span>
+        </h2>
+
+        <p>
+          Gabin Chill memadukan renyahnya biskuit gabin
+          dengan lembutnya es krim dalam pilihan rasa
+          cokelat, matcha, dan Oreo. Teman santai yang
+          pas buat menikmati hari dengan lebih seru.
+        </p>
+
+        <div class="tentang-poin">
+          <div class="poin-item">
+            <span>🍪</span>
+            <div>
+              <strong>Gabin yang Renyah</strong>
+              <p>Perpaduan tekstur yang seru di setiap gigitan.</p>
+            </div>
+          </div>
+
+          <div class="poin-item">
+            <span>🍦</span>
+            <div>
+              <strong>Tiga Pilihan Rasa</strong>
+              <p>Cokelat, matcha, dan Oreo untuk menemani harimu.</p>
+            </div>
+          </div>
+
+          <div class="poin-item">
+            <span>💛</span>
+            <div>
+              <strong>Harga Bersahabat</strong>
+              <p>Semua varian dibanderol Rp10.000.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#menu" class="button button-primary">
+          Pilih Rasa Favorit →
+        </a>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="kontak" id="kontak">
+      <span class="kontak-emoji">💌</span>
+      <span class="section-kicker">LET'S GET CHILL</span>
+
+      <h2>Udah Tentuin Rasa Favorit?</h2>
+
+      <p>
+        Cokelat, matcha, atau Oreo?
+        Pilih favoritmu dan pesan langsung melalui WhatsApp
+        dari Gabin Chill.
+      </p>
+
+      <a
+        href="https://wa.me/6285775199892?text=Halo%20Gabin%20Chill%2C%20saya%20mau%20pesan%20gabin."
+        class="button button-light"
+        target="_blank"
+        rel="noopener noreferrer">
+        Pesan via WhatsApp 💬
+      </a>
+
+      <span class="kontak-note">
+        Klik tombol di atas untuk menghubungi Gabin Chill.
+      </span>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#beranda" class="logo footer-logo">
+      Gabin<span>Chill</span>
+    </a>
+
+    <p>Crispy di luar, creamy di dalam! ♡</p>
+    <a href="#beranda" class="back-top">Kembali ke atas ↑</a>
+
+    <div class="footer-bottom">
+      © 2026 Gabin Chill. Dibuat dengan ♡
+    </div>
+  </footer>
+
+  <!-- MODAL FORM PEMESANAN -->
+  <div class="order-modal" id="orderModal" aria-hidden="true">
+    <div class="order-overlay" onclick="tutupPesanan()"></div>
+
+    <div class="order-box" role="dialog"
+      aria-modal="true" aria-labelledby="orderTitle">
+
+      <button type="button" class="order-close"
+        onclick="tutupPesanan()" aria-label="Tutup formulir">×</button>
+
+      <span class="section-kicker">PESAN GABIN CHILL</span>
+      <h2 id="orderTitle">Form Pemesanan</h2>
+      <p class="order-description">
+        Isi detail pesanan kamu sebelum melanjutkan ke WhatsApp.
+      </p>
+
+      <form id="orderForm">
+        <label for="namaPemesan">Nama kamu</label>
+        <input id="namaPemesan" name="nama" type="text"
+          placeholder="Masukkan nama" required>
+
+        <label for="varianPesanan">Pilih rasa</label>
+        <select id="varianPesanan" name="varian" required>
+          <option value="Choco Chill">Choco Chill</option>
+          <option value="Matcha Chill">Matcha Chill</option>
+          <option value="Oreo Chill">Oreo Chill</option>
+        </select>
+
+        <label for="jumlahPesanan">Jumlah pesanan</label>
+        <div class="quantity-control">
+          <button type="button" id="kurangiJumlah" aria-label="Kurangi jumlah">−</button>
+          <input id="jumlahPesanan" name="jumlah" type="number"
+            min="1" max="100" value="1" required>
+          <button type="button" id="tambahJumlah" aria-label="Tambah jumlah">+</button>
+        </div>
+
+        <label for="metodePesanan">Metode penerimaan</label>
+        <select id="metodePesanan" name="metode" required>
+          <option value="Ambil sendiri">Ambil sendiri</option>
+          <option value="Diantar">Diantar</option>
+        </select>
+
+        <div id="alamatGroup" hidden>
+          <label for="alamatPesanan">Alamat pengantaran</label>
+          <textarea id="alamatPesanan" name="alamat"
+            placeholder="Masukkan alamat lengkap"></textarea>
+        </div>
+
+        <label for="catatanPesanan">Catatan (opsional)</label>
+        <textarea id="catatanPesanan" name="catatan"
+          placeholder="Catatan tambahan untuk pesanan"></textarea>
+
+        <div class="order-total">
+          <span>Total pesanan</span>
+          <strong id="totalPesanan">Rp10.000</strong>
+        </div>
+
+        <button type="submit" class="order-submit">
+          Lanjut ke WhatsApp 💬
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const NOMOR_WHATSAPP = "6285775199892";
+    const HARGA_PER_BUAH = 10000;
+
+    const orderModal = document.getElementById("orderModal");
+    const orderForm = document.getElementById("orderForm");
+    const varianPesanan = document.getElementById("varianPesanan");
+    const jumlahPesanan = document.getElementById("jumlahPesanan");
+    const metodePesanan = document.getElementById("metodePesanan");
+    const alamatGroup = document.getElementById("alamatGroup");
+    const alamatPesanan = document.getElementById("alamatPesanan");
+    const totalPesanan = document.getElementById("totalPesanan");
+
+    function formatRupiah(angka) {
+      return new Intl.NumberFormat("id-ID", {
+        style: "currency",
+        currency: "IDR",
+        maximumFractionDigits: 0
+      }).format(angka);
+    }
+
+    function hitungTotal() {
+      let jumlah = Number(jumlahPesanan.value);
+
+      if (!Number.isFinite(jumlah) || jumlah < 1) {
+        jumlah = 1;
+      }
+
+      if (jumlah > 100) {
+        jumlah = 100;
+      }
+
+      totalPesanan.textContent = formatRupiah(jumlah * HARGA_PER_BUAH);
+    }
+
+    function bukaPesanan(namaProduk) {
+      orderForm.reset();
+
+      if (namaProduk) {
+        varianPesanan.value = namaProduk;
+      }
+
+      jumlahPesanan.value = 1;
+      alamatGroup.hidden = metodePesanan.value !== "Diantar";
+      alamatPesanan.required = metodePesanan.value === "Diantar";
+      hitungTotal();
+
+      orderModal.classList.add("active");
+      orderModal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+
+      document.getElementById("namaPemesan").focus();
+    }
+
+    function tutupPesanan() {
+      orderModal.classList.remove("active");
+      orderModal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+    }
+
+    document.getElementById("kurangiJumlah").addEventListener("click", function () {
+      let jumlah = Number(jumlahPesanan.value) || 1;
+      jumlahPesanan.value = Math.max(1, jumlah - 1);
+      hitungTotal();
+    });
+
+    document.getElementById("tambahJumlah").addEventListener("click", function () {
+      let jumlah = Number(jumlahPesanan.value) || 1;
+      jumlahPesanan.value = Math.min(100, jumlah + 1);
+      hitungTotal();
+    });
+
+    jumlahPesanan.addEventListener("input", hitungTotal);
+    varianPesanan.addEventListener("change", hitungTotal);
+
+    metodePesanan.addEventListener("change", function () {
+      const perluAlamat = metodePesanan.value === "Diantar";
+      alamatGroup.hidden = !perluAlamat;
+      alamatPesanan.required = perluAlamat;
+
+      if (!perluAlamat) {
+        alamatPesanan.value = "";
+      }
+    });
+
+    orderForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!orderForm.reportValidity()) {
+        return;
+      }
+
+      const nama = document.getElementById("namaPemesan").value.trim();
+      const varian = varianPesanan.value;
+      const jumlah = Math.min(100, Math.max(1, Number(jumlahPesanan.value)));
+      const metode = metodePesanan.value;
+      const alamat = alamatPesanan.value.trim();
+      const catatan = document.getElementById("catatanPesanan").value.trim();
+      const total = jumlah * HARGA_PER_BUAH;
+
+      if (metode === "Diantar" && !alamat) {
+        alamatPesanan.focus();
+        alamatPesanan.reportValidity();
+        return;
+      }
+
+      const pesan =
+        "Halo Gabin Chill! Saya mau pesan gabin.\n\n" +
+        "Nama: " + nama + "\n" +
+        "Rasa: " + varian + "\n" +
+        "Jumlah: " + jumlah + " buah\n" +
+        "Harga satuan: " + formatRupiah(HARGA_PER_BUAH) + "\n" +
+        "Total: " + formatRupiah(total) + "\n" +
+        "Metode penerimaan: " + metode +
+        (metode === "Diantar" ? "\nAlamat: " + alamat : "") +
+        (catatan ? "\nCatatan: " + catatan : "") +
+        "\n\nMohon konfirmasi pesanan saya. Terima kasih!";
+
+      const url = "https://wa.me/" + NOMOR_WHATSAPP +
+        "?text=" + encodeURIComponent(pesan);
+
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && orderModal.classList.contains("active")) {
+        tutupPesanan();
+      }
+    });
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("active");
+
+      menuToggle.classList.toggle("active", isOpen);
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+
+</body>
+</html>
